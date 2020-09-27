@@ -1,0 +1,28 @@
+<%- include('head.ejs') %>
+<!-- sending data to /signin -->
+    <form action="/signin" method="POST">
+<div class="content-signin">
+    <div class="con-signin">
+      <h1>Sign In</h1>
+      <div class="con-inputs">
+        <div class="con-input">
+          <lable for="email">User Name</lable>
+          <input
+            type="text"
+            placeholder="user-name"
+            id="email"
+            autocomplete="off"
+            name="username"
+          />
+        </div>
+        <div class="con-input">
+          <lable for="password">Password</lable>
+          <input type="password" name="password" placeholder="your password" id="password" />
+        </div>
+      </div>
+      <footer><button class="btn-signin">Log In</button></footer>
+    </div>
+  </div>
+</form>
+
+<%- include('foot.ejs') %>

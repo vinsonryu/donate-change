@@ -1,0 +1,74 @@
+<%- include('head.ejs') %>
+<!-- posting this data to signup -->
+<form method="POST" action="/signup">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputUsername">Username</label>
+        <input type="username" class="form-control" name="username" id="inputUsername" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Password</label>
+        <input type="password" class="form-control" name="password" id="inputPassword4" required>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputUsername">First name</label>
+        <input type="text" class="form-control" name="firstname" placeholder="First name" required>
+      </div>
+      <div class="form-group col-md-6">
+      <div class="col">
+        <label for="inputUsername">Last name</label>
+        <input type="text" class="form-control" name="lastname" placeholder="Last name" required>
+      </div>
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" name="address1" id="inputAddress" placeholder="1234 Main St" required>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Address 2</label>
+      <input type="text" class="form-control" name="address2" id="inputAddress2" placeholder="Apartment, studio, or floor" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input type="text" class="form-control" name="city" id="inputCity" required>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">State</label>
+        <input type="text" class="form-control" name="state" id="inputState required">
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" name="zip" id="inputZip" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+      </div>
+      <div>
+          <h3>Credit Card Details</h3>
+          <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputUsername">Nick-Name</label>
+            <input type="username" class="form-control" name="nickname" id="inputNickname" required>
+          </div>
+        </div>
+          <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputUsername">Balance</label>
+            <input type="number" class="form-control" name="balance" id="inputBalance" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputUsername">Account-Number</label>
+            <input type="number" class="form-control" name="accountnumber" id="inputAccnumber" required>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+
+<%- include('foot.ejs') %>
